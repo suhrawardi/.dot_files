@@ -1,0 +1,12 @@
+--recurse=yes
+--exclude=.git
+--exclude=log
+--tag-relative=yes
+--exclude=tmp
+--exclude=doc
+--exclude=deps
+--exclude=node_modules
+--exclude=public/assets
+--languages=-javascript,sql
+--extra=+f
+--append

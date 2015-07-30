@@ -1,0 +1,31 @@
+[user]
+  name = jarra
+  email = suhrawardi@gmail.com
+
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+
+[apply]
+  whitespace = strip
+
+[diff]
+  color = auto
+
+[status]
+  color = auto
+
+[github]
+  user = suhrawardi
+
+[core]
+  editor = vim
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+
+[push]
+  default = current
+
+[pull]
+  default = current
