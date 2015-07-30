@@ -15,7 +15,7 @@ syntax on
 filetype plugin indent on
 
 let g:airline_theme='sol'
-"let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 
 let g:netrw_liststyle=3
 
@@ -52,6 +52,11 @@ let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+" Haskell Syntastic extensions
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+au FileType haskell nnoremap <buffer> <silent> <F3> :HdevtoolsInfo<CR>
 
 vnoremap <down> <nop>
 vnoremap <left> <nop>
