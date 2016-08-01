@@ -22,9 +22,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ct='ctags . $(bundle list --paths)'
+alias cuke='cucumber `git diff --name-only features`'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export EDITOR=vi
-set -o vi
