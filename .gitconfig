@@ -6,6 +6,7 @@
   ci = commit
   co = checkout
   st = status
+  ctags = !.git/hooks/ctags
 
 [apply]
   whitespace = strip
@@ -29,3 +30,5 @@
 
 [pull]
   default = current
+[init]
+  templatedir = ~/.git_template
