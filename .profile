@@ -21,7 +21,6 @@ PS1="\[\033[01;34m\]\W\[\033[00m\]:\[\e[1;32m\]\$(parse_rvm)\[\033[00m\]:\[\033[
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ct='ctags . $(bundle list --paths)'
 alias cuke='cucumber `git diff --name-only features`'
 
 export LC_ALL=en_US.UTF-8
