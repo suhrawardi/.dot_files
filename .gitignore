@@ -1,3 +1,4 @@
 .vim/.netrwhist
 /.tmux/.tmux
 /tmux*.log
+/.tmux/resurrect
