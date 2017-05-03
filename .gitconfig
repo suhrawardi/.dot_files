@@ -30,5 +30,7 @@
 
 [pull]
   default = current
+  rebase = true
+
 [init]
   templatedir = ~/.git_template
