@@ -1,4 +1,15 @@
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set expandtab " Make sure that every file uses spaces, not tabs
+set shiftround  " Round indent to multiple of 'shiftwidth'
+set smartindent " Do smart indenting when starting a new line
+set autoindent  " Copy indent from current line, over to the new line
+set smarttab
+
+" Set the tab width
+let s:tabwidth=2
+exec 'set tabstop='    .s:tabwidth
+exec 'set shiftwidth=' .s:tabwidth
+exec 'set softtabstop=0'.s:tabwidth
+
 retab
 
 set fenc=utf-8
@@ -65,6 +76,14 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
+
+" Force retabbing
+nmap <leader>x :call ForceRetab()<CR>
+
+function! ForceRetab()
+  setlocal expandtab
+  retab
+endfunction
 
 " Vim signature, for showing marks
 nmap <leader>m :SignatureToggle<CR>
