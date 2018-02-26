@@ -21,6 +21,7 @@ set colorcolumn=80
 
 execute pathogen#infect()
 syntax on
+filetype on
 filetype plugin indent on
 
 let g:airline_theme='sol'
@@ -31,13 +32,8 @@ let g:netrw_liststyle=3
 " Toggle past / nopaste node
 set pastetoggle=<F10>
 
-" Vim shortcuts
-nmap <leader>gb :Gblame<CR>
-nmap <leader>gs :Gstatus<CR>
-nmap <leader>gd :Gdiff<CR>
-nmap <leader>gl :Glog<CR>
-nmap <leader>gc :Gcommit<CR>
-nmap <leader>gp :Git push<CR>
+nmap <leader>tn :TestNearest<CR>
+nmap <leader>tf :TestFile<CR>
 
 " Upper/lower word
 nmap <leader>u mQviwU`Q
@@ -45,9 +41,6 @@ nmap <leader>l mQviwu`Q
 
 " Swap two words
 nmap <silent> gw :s/\(\%#\w\+\)\(\_W\+\)\(\w\+\)/\3\2\1/<CR>`'
-
-" Rspec
-nmap <leader>s :VroomRunNearestTest<CR>
 
 " Rubocop
 nmap <Leader>r :RuboCop<CR>
@@ -99,6 +92,3 @@ function! FoldColumnToggle()
     setlocal foldcolumn=1
   endif
 endfunction
-
-" NERDtree
-map <C-n> :NERDTreeToggle<CR>
