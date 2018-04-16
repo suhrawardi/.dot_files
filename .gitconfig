@@ -8,6 +8,9 @@
   st = status
   ctags = !.git/hooks/ctags
 
+[advice]
+  ignoredHook = false
+
 [apply]
   whitespace = strip
 
@@ -22,8 +25,8 @@
 
 [core]
   editor = vim
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
 
 [push]
   default = current
