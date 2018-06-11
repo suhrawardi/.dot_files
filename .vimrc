@@ -32,6 +32,8 @@ let g:netrw_liststyle=3
 " Toggle past / nopaste node
 set pastetoggle=<F10>
 
+let test#ruby#use_binstubs = 0
+
 nmap <leader>tn :TestNearest<CR>
 nmap <leader>tf :TestFile<CR>
 
