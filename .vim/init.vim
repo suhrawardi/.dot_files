@@ -1,1 +1,1 @@
-/Users/jarra/.vimrc
+/home/jarra/.vimrc
