@@ -43,3 +43,9 @@
 [submodule ".vim/bundle/vim-test"]
 	path = .vim/bundle/vim-test
 	url = git@github.com:janko-m/vim-test.git
+[submodule ".tmux/plugins/tmux-continuum"]
+	path = .tmux/plugins/tmux-continuum
+	url = git@github.com:tmux-plugins/tmux-continuum.git
+[submodule ".tmux/plugins/tmux-resurrect"]
+	path = .tmux/plugins/tmux-resurrect
+	url = git@github.com:tmux-plugins/tmux-resurrect.git
