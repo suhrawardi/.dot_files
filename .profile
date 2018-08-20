@@ -21,9 +21,6 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/git-completion.bash
-
 # set git branchename
 function parse_git_dirty {
   git diff --quiet HEAD &>/dev/null
