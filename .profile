@@ -39,6 +39,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cuke='cucumber `git diff --name-only features`'
 alias be='bundle exec'
+alias foreman='PORT=3000 be foreman start'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
