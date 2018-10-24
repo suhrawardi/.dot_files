@@ -7,6 +7,8 @@
   co = checkout
   st = status
   ctags = !.git/hooks/ctags
+  tidy = "!git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+  cleanup = "!git remote update origin --prune"
 
 [advice]
   ignoredHook = false
