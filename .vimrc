@@ -67,7 +67,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_haskell_checkers = ['ghc-mod']
+let g:syntastic_haskell_checkers = ['hdevtools']
 
 vnoremap <down> <nop>
 vnoremap <left> <nop>
