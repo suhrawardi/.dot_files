@@ -22,6 +22,9 @@ fi
 if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
+if [ -d "$HOME/.dot_files/bin" ] ; then
+  PATH="$HOME/.dot_files/bin:$PATH"
+fi
 
 # set git branchename
 function parse_git_dirty {
