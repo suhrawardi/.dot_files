@@ -36,6 +36,11 @@ function parse_git_branch {
   [[ $branch ]] && echo "$(parse_git_dirty)$branch"
 }
 
+if [ -d "$HOME/.asdf" ] ; then
+  . $HOME/.asdf/asdf.sh
+  . $HOME/.asdf/completions/asdf.bash
+fi
+
 PS1="\[\033[01;34m\]\W\[\033[00m\]:\[\033[01;31m\]\$(parse_git_branch)\[\033[00m\]\$ "
 
 # some more ls aliases
@@ -44,7 +49,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cuke='cucumber `git diff --name-only features`'
 alias be='bundle exec'
-alias foreman='PORT=3000 be foreman start'
+alias dc='docker-compose'
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
