@@ -29,10 +29,6 @@ syntax on
 filetype on
 filetype plugin indent on
 
-" air-line
-let g:airline_theme='sol'
-let g:airline_powerline_fonts=1
-
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
@@ -101,3 +97,12 @@ function! FoldColumnToggle()
     setlocal foldcolumn=1
   endif
 endfunction
+
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+
+" air-line
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts=1
