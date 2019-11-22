@@ -98,10 +98,11 @@ function! FoldColumnToggle()
   endif
 endfunction
 
-syntax enable
-set background=dark
-colorscheme solarized
-
 " air-line
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
+let g:airline_solarized_bg='dark'
+
+syntax enable
+set background=dark
+colorscheme solarized
