@@ -101,7 +101,6 @@ endfunction
 syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors=256
 
 " air-line
 let g:airline_theme='solarized'
