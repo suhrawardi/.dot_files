@@ -105,4 +105,5 @@ let g:airline_solarized_bg='dark'
 
 syntax enable
 set background=dark
+set t_Co=16
 colorscheme solarized
