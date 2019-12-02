@@ -47,8 +47,6 @@ PS1="\[\033[01;34m\]\W\[\033[00m\]:\[\033[01;31m\]\$(parse_git_branch)\[\033[00m
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias cuke='cucumber `git diff --name-only features`'
-alias be='bundle exec'
 alias dc='docker-compose'
 
 export LC_ALL=en_US.UTF-8
