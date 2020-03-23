@@ -12,3 +12,4 @@ ln -s ${PWDIR}/.tmux ~/.tmux
 ln -s ${PWDIR}/.tmux.conf ~/.tmux.conf
 ln -s ${PWDIR}/.vim ~/.vim
 ln -s ${PWDIR}/.vimrc ~/.vimrc
+ln -s ${PWDIR}/.default-python-packages ~/.default-python-packages
