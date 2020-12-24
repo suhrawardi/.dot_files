@@ -58,3 +58,6 @@
 [submodule ".asdf"]
 	path = .asdf
 	url = git://github.com/asdf-vm/asdf.git
+[submodule ".vim/bundle/julia-vim"]
+	path = .vim/bundle/julia-vim
+	url = git://github.com/JuliaEditorSupport/julia-vim.git
