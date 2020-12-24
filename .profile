@@ -55,3 +55,6 @@ export LANG=en_US.UTF-8
 export EDITOR=vi
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# eval $(docker-machine env default)
+source "$HOME/.cargo/env"
