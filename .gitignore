@@ -3,3 +3,4 @@
 /tmux*.log
 /.tmux/resurrect
 .DS_Store
+/.vim/view

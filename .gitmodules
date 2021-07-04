@@ -65,3 +65,6 @@
 	path = .vim/bundle/JuliaFormatter.vim
 	url = git@github.com:kdheepak/JuliaFormatter.vim.git
 	branch = master
+[submodule ".vim/bundle/rust.vim"]
+	path = .vim/bundle/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git
