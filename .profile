@@ -58,3 +58,5 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # eval $(docker-machine env default)
 source "$HOME/.cargo/env"
+
+#export JULIA_LOAD_PATH="~/.julia:$JULIA_LOAD_PATH"
