@@ -39,3 +39,5 @@
 [init]
 	templatedir = ~/.git_template
 	defaultBranch = master
+[url "https://"]
+	insteadOf = git://
